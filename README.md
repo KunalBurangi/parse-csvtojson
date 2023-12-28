@@ -1,6 +1,6 @@
 # parse-csvtojson
 
-[![Package Version](https://badgen.net/npm/v/parse-csvtojson)](https://npmjs.org/package/parse-csvtojson) [![Build Status](https://travis-ci.org/julien-f/parse-csvtojson.png?branch=master)](https://travis-ci.org/julien-f/parse-csvtojson) [![PackagePhobia](https://badgen.net/packagephobia/install/parse-csvtojson)](https://packagephobia.now.sh/result?p=parse-csvtojson) [![Latest Commit](https://badgen.net/github/last-commit/julien-f/parse-csvtojson)](https://github.com/julien-f/parse-csvtojson/commits/master)
+[![Package Version](https://badgen.net/npm/v/parse-csvtojson)](https://npmjs.org/package/parse-csvtojson) [![Build Status](https://travis-ci.org/KunalBurangi/parse-csvtojson.png?branch=main)] [![PackagePhobia](https://badgen.net/packagephobia/install/parse-csvtojson)](https://packagephobia.now.sh/result?p=parse-csvtojson) [![Latest Commit](https://badgen.net/github/last-commit/kunalburangi/parse-csvtojson)](https://github.com/kunalburangi/parse-csvtojson/commits/main)
 
 
 > Stream and CLI to convert CSV to JSON.
@@ -22,21 +22,17 @@ npm install --save parse-csvtojson
 ```
 
 ## Usage
-
-
-
-### Stream
-
-```javascript
-var parse-csvtojson = require('parse-csvtojson');
-var fs = require('fs');
-
-fs.createReadStream('data.csv')
-  .pipe(parse-csvtojson({
-    // Defaults to comma.
-    separator: ';'
-  }))
-  .pipe(fs.createWriteStream('data.json'));
+### Json Object
+var csv2json = require("csvtojson-parser");
+var fs = require("fs");
+csv2json("example.csv", options, function (err, jsonData) {
+    if (err) {
+        console.error("Error:", err);
+    } else {
+        result = jsonData;
+        console.log(JSON.stringify(jsonData, null, 2));
+    }
+});
 ```
 
 ## Contributions
@@ -46,7 +42,7 @@ the code.
 
 You may:
 
-- report any [issue](https://github.com/julien-f/parse-csvtojson/issues)
+- report any [issue](https://github.com/kunalburangi/parse-csvtojson/issues)
   you've encountered;
 - fork and create a pull request.
 
@@ -55,5 +51,3 @@ You may:
 Thanks to @twilson63 for letting me use the *parse-csvtojson* name on [npm](https://www.npmjs.org/).
 
 ## License
-
-ISC © [Julien Fontanet](http://julien.isonoe.net)
