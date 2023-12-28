@@ -1,21 +1,22 @@
 {
-  "name": "csv-2-json",
+  "name": "csvtojson-parser",
   "version": "1.0.0",
   "license": "ISC",
-  "description": "Stream and CLI to convert CSV to JSON",
+  "description": "Convert CSV to JSON object",
   "keywords": [
     "csv",
     "json",
     "csv2json",
     "csvtojson",
-    "stream"
+    "stream",
+    "csvtojson-parser"
   ],
   "type": "commonjs",
-  "homepage": "https://github.com/KunalBurangi/cvs-2-json",
-  "bugs": "https://github.com/KunalBurangi/cvs-2-jsonissues",
+  "homepage": "https://github.com/KunalBurangi/csvtojson-parser",
+  "bugs": "https://github.com/KunalBurangi/csvtojson-parser/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KunalBurangi/cvs-2-json.git"
+    "url": "https://github.com/KunalBurangi/csvtojson-parser.git"
   },
   "author": {
     "name": "Julien Fontanet",
