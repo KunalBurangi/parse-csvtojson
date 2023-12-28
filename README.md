@@ -1,60 +1,38 @@
-# cvs-2-json# csv2json
+# cvs-2-json# csv-2-json
 
-[![Package Version](https://badgen.net/npm/v/csv2json)](https://npmjs.org/package/csv2json) [![Build Status](https://travis-ci.org/julien-f/csv2json.png?branch=master)](https://travis-ci.org/julien-f/csv2json) [![PackagePhobia](https://badgen.net/packagephobia/install/csv2json)](https://packagephobia.now.sh/result?p=csv2json) [![Latest Commit](https://badgen.net/github/last-commit/julien-f/csv2json)](https://github.com/julien-f/csv2json/commits/master)
+[![Package Version](https://badgen.net/npm/v/csv-2-json)](https://npmjs.org/package/csv-2-json) [![Build Status](https://travis-ci.org/julien-f/csv-2-json.png?branch=master)](https://travis-ci.org/julien-f/csv-2-json) [![PackagePhobia](https://badgen.net/packagephobia/install/csv-2-json)](https://packagephobia.now.sh/result?p=csv-2-json) [![Latest Commit](https://badgen.net/github/last-commit/julien-f/csv-2-json)](https://github.com/julien-f/csv-2-json/commits/master)
 
-**Looking for maintainers, drop a message [in this issue](https://github.com/julien-f/csv2json/issues/36).**
 
 > Stream and CLI to convert CSV to JSON.
 
 ## Install
 
-Installation of the [npm package](https://npmjs.org/package/csv2json):
+Installation of the [npm package](https://npmjs.org/package/csv-2-json):
 
 Install globally if you want to use the CLI:
 
 ```
-npm install --global csv2json
+npm install --global csv-2-json
 ```
 
 Install locally if you want to use it as a library:
 
 ```
-npm install --save csv2json
+npm install --save csv-2-json
 ```
 
 ## Usage
 
-### CLI
 
-```
-Usage: csv2json [OPTIONS] [<input file> [<output file>]]
-
-  -d, --dynamic-typing
-    Convert booleans and numeric to their type instead of strings.
-
-  -s <separator>, --separator=<separator>
-    Field separator to use (default to comma “,”).
-
-  -t, --tsv
-    Use tab as separator, overrides separator flag.
-
-  <input file>
-    CSV file to read data from.
-    If unspecified or a dash (“-”), use the standard input.
-
-  <output file>
-    JSON file to write data to.
-    If unspecified or a dash (“-”), use the standard output.
-```
 
 ### Stream
 
 ```javascript
-var csv2json = require('csv2json');
+var csv-2-json = require('csv-2-json');
 var fs = require('fs');
 
 fs.createReadStream('data.csv')
-  .pipe(csv2json({
+  .pipe(csv-2-json({
     // Defaults to comma.
     separator: ';'
   }))
@@ -68,13 +46,13 @@ the code.
 
 You may:
 
-- report any [issue](https://github.com/julien-f/csv2json/issues)
+- report any [issue](https://github.com/julien-f/csv-2-json/issues)
   you've encountered;
 - fork and create a pull request.
 
 ## Note
 
-Thanks to @twilson63 for letting me use the *csv2json* name on [npm](https://www.npmjs.org/).
+Thanks to @twilson63 for letting me use the *csv-2-json* name on [npm](https://www.npmjs.org/).
 
 ## License
 
