@@ -1,5 +1,5 @@
 {
-  "name": "csvtojson-parser",
+  "name": "parse-csvtojson",
   "version": "1.0.0",
   "license": "ISC",
   "description": "Convert CSV to JSON object",
@@ -9,14 +9,14 @@
     "csv2json",
     "csvtojson",
     "stream",
-    "csvtojson-parser"
+    "parse-csvtojson"
   ],
   "type": "commonjs",
-  "homepage": "https://github.com/KunalBurangi/csvtojson-parser",
-  "bugs": "https://github.com/KunalBurangi/csvtojson-parser/issues",
+  "homepage": "https://github.com/KunalBurangi/parse-csvtojson",
+  "bugs": "https://github.com/KunalBurangi/parse-csvtojson/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KunalBurangi/csvtojson-parser.git"
+    "url": "https://github.com/KunalBurangi/parse-csvtojson.git"
   },
   "author": {
     "name": "Kunal Burangi",

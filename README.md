@@ -1,25 +1,24 @@
-# csvtojson-parser
-# csvtojson-parser
+# parse-csvtojson
 
-[![Package Version](https://badgen.net/npm/v/csvtojson-parser)](https://npmjs.org/package/csvtojson-parser) [![Build Status](https://travis-ci.org/julien-f/csvtojson-parser.png?branch=master)](https://travis-ci.org/julien-f/csvtojson-parser) [![PackagePhobia](https://badgen.net/packagephobia/install/csvtojson-parser)](https://packagephobia.now.sh/result?p=csvtojson-parser) [![Latest Commit](https://badgen.net/github/last-commit/julien-f/csvtojson-parser)](https://github.com/julien-f/csvtojson-parser/commits/master)
+[![Package Version](https://badgen.net/npm/v/parse-csvtojson)](https://npmjs.org/package/parse-csvtojson) [![Build Status](https://travis-ci.org/julien-f/parse-csvtojson.png?branch=master)](https://travis-ci.org/julien-f/parse-csvtojson) [![PackagePhobia](https://badgen.net/packagephobia/install/parse-csvtojson)](https://packagephobia.now.sh/result?p=parse-csvtojson) [![Latest Commit](https://badgen.net/github/last-commit/julien-f/parse-csvtojson)](https://github.com/julien-f/parse-csvtojson/commits/master)
 
 
 > Stream and CLI to convert CSV to JSON.
 
 ## Install
 
-Installation of the [npm package](https://npmjs.org/package/csvtojson-parser):
+Installation of the [npm package](https://npmjs.org/package/parse-csvtojson):
 
 Install globally if you want to use the CLI:
 
 ```
-npm install --global csvtojson-parser
+npm install --global parse-csvtojson
 ```
 
 Install locally if you want to use it as a library:
 
 ```
-npm install --save csvtojson-parser
+npm install --save parse-csvtojson
 ```
 
 ## Usage
@@ -29,11 +28,11 @@ npm install --save csvtojson-parser
 ### Stream
 
 ```javascript
-var csvtojson-parser = require('csvtojson-parser');
+var parse-csvtojson = require('parse-csvtojson');
 var fs = require('fs');
 
 fs.createReadStream('data.csv')
-  .pipe(csvtojson-parser({
+  .pipe(parse-csvtojson({
     // Defaults to comma.
     separator: ';'
   }))
@@ -47,13 +46,13 @@ the code.
 
 You may:
 
-- report any [issue](https://github.com/julien-f/csvtojson-parser/issues)
+- report any [issue](https://github.com/julien-f/parse-csvtojson/issues)
   you've encountered;
 - fork and create a pull request.
 
 ## Note
 
-Thanks to @twilson63 for letting me use the *csvtojson-parser* name on [npm](https://www.npmjs.org/).
+Thanks to @twilson63 for letting me use the *parse-csvtojson* name on [npm](https://www.npmjs.org/).
 
 ## License
 
