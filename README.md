@@ -1,4 +1,5 @@
-# cvs-2-json# csvtojson-parser
+# csvtojson-parser
+# csvtojson-parser
 
 [![Package Version](https://badgen.net/npm/v/csvtojson-parser)](https://npmjs.org/package/csvtojson-parser) [![Build Status](https://travis-ci.org/julien-f/csvtojson-parser.png?branch=master)](https://travis-ci.org/julien-f/csvtojson-parser) [![PackagePhobia](https://badgen.net/packagephobia/install/csvtojson-parser)](https://packagephobia.now.sh/result?p=csvtojson-parser) [![Latest Commit](https://badgen.net/github/last-commit/julien-f/csvtojson-parser)](https://github.com/julien-f/csvtojson-parser/commits/master)
 
