@@ -7,7 +7,7 @@ const parseCsv = require('csv-parser')
  * Parses dynamic values in an object.
  * @param {Object} data - The object containing dynamic values.
  */
-function parseDynamic(data) {
+function parseDynamic (data) {
   for (const name in data) {
     if (Object.prototype.hasOwnProperty.call(data, name)) {
       const value = data[name].toLowerCase()
@@ -38,7 +38,7 @@ function parseDynamic(data) {
  * @param {string[]} [options.fields=null] - An array of field names to include in the output.
  * @param {function} callback - Callback function to handle the JSON data.
  */
-function csv2json(filePath, options, callback) {
+function csv2json (filePath, options, callback) {
   options = options || {}
   const processData = options.dynamicTyping ? parseDynamic : function () { }
   const outputMode = options.outputMode || 'json' // 'json' or 'ndjson'
@@ -78,15 +78,15 @@ function csv2json(filePath, options, callback) {
       // For NDJSON, we might want to emit data events or handle it differently.
       // However, the current API expects a callback with the full result for JSON.
       // For NDJSON, if we want to support streaming to a file via CLI, we should probably
-      // return the stream or handle it in the CLI. 
-      // But to keep the library API simple for now, let's accumulate for the callback 
+      // return the stream or handle it in the CLI.
+      // But to keep the library API simple for now, let's accumulate for the callback
       // UNLESS the user wants to handle the stream themselves.
       // Given the current signature `csv2json(file, opts, cb)`, we'll accumulate.
-      // Wait, NDJSON is usually for streaming. 
+      // Wait, NDJSON is usually for streaming.
       // Let's support a 'stream' option? Or just accumulate strings?
       // Let's stick to the plan: "Support streaming output for NDJSON".
       // If outputMode is ndjson, we can't easily return an array.
-      // Let's return the stream if callback is not provided? 
+      // Let's return the stream if callback is not provided?
       // Or maybe just accumulate the objects and let the caller format it?
       // Actually, the plan said "Output Formats (NDJSON)".
       // Let's just return the array of objects as usual, and let the CLI handle the formatting?

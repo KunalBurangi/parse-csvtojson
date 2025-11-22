@@ -46,7 +46,9 @@
   },
   "scripts": {
     "test": "mocha test/**/*.unit.js",
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "build": "npm run lint && npm test",
+    "install-deps": "npm install"
   },
   "jest": {
     "testRegex": "\\.spec\\.js$"
