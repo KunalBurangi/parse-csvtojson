@@ -1,4 +1,4 @@
-var csv2json = require('./index2')
+var csv2json = require('./index')
 
 csv2json('example.csv', { dynamicTyping: true, separator: ',' }, function (err, jsonData) {
   if (err) {

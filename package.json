@@ -33,7 +33,6 @@
     "csv-parser": "^2.3.0",
     "exec-promise": "^0.7.0",
     "minimist": "^1.2.0",
-    "mocha": "^10.2.0",
     "promise-toolbox": "^0.15.0",
     "pump": "^3.0.0",
     "pumpify": "^2.0.0",
@@ -42,10 +41,14 @@
   },
   "devDependencies": {
     "husky": "^4.2.3",
+    "mocha": "^10.2.0",
     "standard": "^14.1.0"
   },
   "scripts": {
-    "test": "standard --fix"
+    "test": "mocha test/**/*.unit.js",
+    "lint": "standard --fix",
+    "build": "npm run lint && npm test",
+    "install-deps": "npm install"
   },
   "jest": {
     "testRegex": "\\.spec\\.js$"
